@@ -40,13 +40,24 @@
 		</div>
 		<!-- END NAVIGARION BAR AND LOGO -->
 	</div>
-	
+
 	<div class="slideshow">
 		<img src="assets/img/slideshow/slide1.jpg" alt="slideshow">
 	</div>
 
 	<!-- BEGIN ADDING CORE JAVASCRIPT FILES -->
-    <script src="assets/Js/jquery.min.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+    <script src="assets/js/menuscroll.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+    	$(window).on("scroll", function(){
+			if($(window).scrollTop()){
+				$('navbar').addClass('black');
+			}else{
+				$('navbar').removeClass('black');
+			}
+		});
+    </script>
     <!-- BEGIN ADDING CORE JAVASCRIPT FILES -->
 
 </body>

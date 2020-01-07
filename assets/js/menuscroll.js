@@ -1,13 +1,13 @@
 /* 
- *Javascript file to control slideshow in home page
+ *Javascript file to control menu background on scroll
  */
 
 $(document).ready(function() {
 	$(window).on("scroll", function(){
 		if($(window).scrollTop()){
-			$(navbar).addClass('black');
+			$('navbar').addClass('black');
 		}else{
-			$(navbar).removeClass('black');
+			$('navbar').removeClass('black');
 		}
 	});
 });
