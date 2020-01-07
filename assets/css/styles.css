@@ -23,11 +23,61 @@
 /* ============================================================================= 
 1. General Settings
 ============================================================================= */
+body{
+	background: #eee;
+}
 
 /* ============================================================================= 
 3. Navigation Bar
 ============================================================================= */
 
+.header{
+	background: #F00;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.navbar{
+	height: 100px;
+	position: fixed;
+	overflow: hidden;
+}
+
+.navbar-header{
+	height: 100px;
+}
+
+.navbar-nav{
+	height: 100px;
+	/*background: #333;*/
+	padding-top: 40px;
+	padding-left: 100px;
+}
+
+.navbar-nav li a{
+	color: #FFF;
+	font-size: 15px;
+	font-weight: bold;
+	word-spacing: 2px;
+    letter-spacing: .6px;
+    text-transform: uppercase;
+}
+
+.navbar-nav li a:hover{
+	border-radius: 5px;
+	background: #fd7e14;
+}
+
+.logo{
+	height: 100px;
+	/*background: #FF0;*/
+}
+
 .logo img{
-	width: 30%;
+	height: 120%;
+}
+
+.second{
+	background: #666;
+	height: 100vh;
 }
