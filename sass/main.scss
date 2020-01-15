@@ -1,6 +1,7 @@
 
-$color-primary = #d4af37;
-
+$color-gold: #d4af37;
+$color-white: #ffffff;
+$color-light-gray: #777777;
 
 *,
 *::after,
@@ -12,4 +13,13 @@ $color-primary = #d4af37;
 
 html{
 	font-size: 62.5%;
+}
+
+body{
+	padding: 2rem;
+	font-weight: 400;
+	box-sizing: boder-box;
+	color: $color-light-gray;
+	background: rgba($color-white, 1);
+
 }

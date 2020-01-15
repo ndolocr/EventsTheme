@@ -1,0 +1,16 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  padding: 2rem;
+  font-weight: 400;
+  box-sizing: boder-box;
+  color: #777777;
+  background: white; }
