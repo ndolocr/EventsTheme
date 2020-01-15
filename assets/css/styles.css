@@ -9,8 +9,115 @@ html {
   font-size: 62.5%; }
 
 body {
-  padding: 2rem;
+  padding: 3rem;
+  font-size: 1.6rem;
   font-weight: 400;
   box-sizing: boder-box;
   color: #777777;
   background: white; }
+
+nav {
+  background: #ff0; }
+  nav::after {
+    content: '';
+    clear: both; }
+
+.header {
+  height: 95vh;
+  position: relative;
+  background-size: cover;
+  background-position: top;
+  background-image: linear-gradient(to right bottom, rgba(248, 237, 200, 0.8), rgba(196, 151, 4, 0.8)), url(../img/hero/hero.jpg);
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%); }
+
+.logo-box {
+  top: 4rem;
+  left: 4rem;
+  position: absolute; }
+
+.logo {
+  height: 9rem; }
+
+.menu {
+  top: 4rem;
+  left: 25rem;
+  position: absolute; }
+  .menu ul li {
+    float: left;
+    list-style: none;
+    padding: 5rem 2rem 3rem 2rem; }
+    .menu ul li a {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #ffffff;
+      text-decoration: none;
+      text-transform: uppercase; }
+
+.text-box {
+  top: 40%;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  transform: translate(-50%, -50%); }
+
+.heading-primary {
+  color: #ffffff;
+  margin-bottom: 6rem;
+  text-transform: uppercase;
+  backface-visibility: hidden; }
+  .heading-primary-main {
+    display: block;
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+    animation-duration: 1s;
+    animation-name: moveInLeft;
+    animation-timing-function: ease-out; }
+  .heading-primary-sub {
+    display: block;
+    font-size: 1.35rem;
+    font-weight: 700;
+    letter-spacing: 1.3rem;
+    animation-duration: 1s;
+    animation-name: moveInRight;
+    animation-timing-function: ease-out; }
+
+.btn:link, .btn:visited {
+  border-radius: 10rem;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s; }
+
+.btn:hover {
+  transform: translate(0, -0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.btn:active {
+  transform: translate(0, -0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.btn-white {
+  color: #777777;
+  background: #ffffff; }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translate(-100px); }
+  80% {
+    transform: translate(10px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translate(100px); }
+  80% {
+    transform: translate(-10px); }
+  100% {
+    opacity: 1;
+    transfrom: translate(0); } }
