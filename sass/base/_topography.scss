@@ -1,0 +1,38 @@
+body{
+	padding: 3rem;
+	font-size: 1.6rem;
+	font-weight: 400;
+	color: $color-light-grey;
+	background: rgba($color-white, 1);
+
+}
+
+.heading-primary{
+	color: $color-white;
+	margin-bottom: 6rem;
+	text-transform: uppercase;
+
+	backface-visibility: hidden;
+
+	&-main{
+		display: block;
+		font-size: 5rem;
+		font-weight: 400;
+		letter-spacing: 3.5rem;
+
+		animation-duration: 1s;
+		animation-name: moveInLeft;
+		animation-timing-function: ease-out;
+	}
+
+	&-sub{
+		display: block;
+		font-size: 1.35rem;
+		font-weight: 700;
+		letter-spacing: 1.3rem;
+
+		animation-duration: 1s;
+		animation-name: moveInRight;
+		animation-timing-function: ease-out;
+	}
+}

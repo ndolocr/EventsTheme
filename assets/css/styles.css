@@ -9,12 +9,56 @@ html {
   font-size: 62.5%; }
 
 body {
+  box-sizing: boder-box; }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translate(-100px); }
+  80% {
+    transform: translate(10px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translate(100px); }
+  80% {
+    transform: translate(-10px); }
+  100% {
+    opacity: 1;
+    transfrom: translate(0); } }
+
+body {
   padding: 3rem;
   font-size: 1.6rem;
   font-weight: 400;
-  box-sizing: boder-box;
   color: #777777;
   background: white; }
+
+.heading-primary {
+  color: #ffffff;
+  margin-bottom: 6rem;
+  text-transform: uppercase;
+  backface-visibility: hidden; }
+  .heading-primary-main {
+    display: block;
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+    animation-duration: 1s;
+    animation-name: moveInLeft;
+    animation-timing-function: ease-out; }
+  .heading-primary-sub {
+    display: block;
+    font-size: 1.35rem;
+    font-weight: 700;
+    letter-spacing: 1.3rem;
+    animation-duration: 1s;
+    animation-name: moveInRight;
+    animation-timing-function: ease-out; }
 
 nav {
   background: #ff0; }
@@ -60,28 +104,6 @@ nav {
   text-align: center;
   transform: translate(-50%, -50%); }
 
-.heading-primary {
-  color: #ffffff;
-  margin-bottom: 6rem;
-  text-transform: uppercase;
-  backface-visibility: hidden; }
-  .heading-primary-main {
-    display: block;
-    font-size: 5rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
-    animation-duration: 1s;
-    animation-name: moveInLeft;
-    animation-timing-function: ease-out; }
-  .heading-primary-sub {
-    display: block;
-    font-size: 1.35rem;
-    font-weight: 700;
-    letter-spacing: 1.3rem;
-    animation-duration: 1s;
-    animation-name: moveInRight;
-    animation-timing-function: ease-out; }
-
 .btn:link, .btn:visited {
   border-radius: 10rem;
   padding: 1.5rem 4rem;
@@ -101,23 +123,3 @@ nav {
 .btn-white {
   color: #777777;
   background: #ffffff; }
-
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translate(-100px); }
-  80% {
-    transform: translate(10px); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translate(100px); }
-  80% {
-    transform: translate(-10px); }
-  100% {
-    opacity: 1;
-    transfrom: translate(0); } }
