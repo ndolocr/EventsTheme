@@ -1,0 +1,24 @@
+.u-center-text{ text-align: center; }
+
+.u-margin-top-big{ margin-top: 8rem; }
+
+.u-margin-bottom-big{ margin-bottom: 8rem; }
+
+.u-margin-bottom-medium{ margin-bottom: 4rem; }
+
+.u-margin-bottom-small{ margin-bottom: 1.5rem; }
+
+
+.heading-tertiary{
+	font-weight: 700;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+}
+
+.paragraph{
+	font-size: $default-font-size;
+
+	&:not(last-child){
+		margin-bottom: 3rem;
+	}
+}

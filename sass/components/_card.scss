@@ -1,0 +1,119 @@
+.card{
+	height: 50rem;
+	position: relative;
+	perspective: 150rem;
+	-moz-perspective: 150rem;
+	-webkit-perspective: 150rem;
+	
+	&__side{
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 50rem;
+		font-size: 2rem;
+		overflow: hidden;
+		position: absolute;
+		border-radius: 0.3rem;
+		color: $dark-grey-color;
+		transition: all .8s ease;
+		backface-visibility: hidden;
+		box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+		&--front{
+			background: $dark-grey-color;	
+			background: $gold-color;
+		}
+
+		&--back{
+			transform: rotateY(180deg);
+
+			&-one{
+				background-image: linear-gradient(to right bottom, rgba($gold-color, .2), rgba($gold-color, 1));
+			}
+		}
+	}
+	
+	
+
+	&:hover &__side--front{
+		transform: rotateY(-180deg);
+	}
+
+	&:hover &__side--back{
+		transform: rotateY(0);
+	}
+
+	&__picture{
+		z-index: 2;
+		height: 23rem;
+		overflow: hidden;
+
+		clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+		-moz-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+			
+		& img{
+			width: 100%;
+		}
+
+	}
+
+	&__heading{
+	height: 5rem;
+	padding: 0 1.2rem;
+	font-weight: 300;
+	font-size: 1.8rem;
+	text-align: right;
+	color: $white-color;
+	text-transform: uppercase;
+	}
+
+	&__details{
+		width: 100%;
+		height: 15rem;
+		padding: 3rem 0;
+		background: $white-color;
+		border: solid 1px $white-color;
+
+		clip-path: polygon(0 15%,  100% 0, 100% 100%, 0 100%);
+		-moz-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+		-webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+
+		ul{
+			width: 70%;
+			margin: 0 auto;
+			list-style: none;
+
+			li{
+				padding: 1rem;
+				font-size: 1.5rem;
+				text-align: center;
+
+				&:not(:last-child){
+					border-bottom: solid 1px $lighter-grey-color;
+				}
+			}
+
+		}
+
+	}
+
+	&__cta{
+		top: 50%;
+		left: 50%;
+		width: 100%;
+		text-align: center;
+		position: absolute;
+		transform: translate(-50%, -50%);
+
+		& h4{
+			font-size: 1.6rem;
+			text-align: center;
+			color: $white-color;
+			margin-bottom: 5rem;
+
+			text-shadow: 0 0.5rem 1rem $color-light-black;
+		}
+	}
+}

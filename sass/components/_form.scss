@@ -1,0 +1,56 @@
+.form{
+	
+	&__group{
+		width: 95%;
+		padding: .3rem;
+	}
+
+	&::after{
+		content: '';
+		clear: both;
+	}
+	
+	&__group:not(:last-child){
+		margin-bottom: 2rem;
+	}
+	
+	&__input{
+		width: 85%;
+		border: none;
+		font-size: 1.5rem;
+		border-radius: 2px;
+		padding: 1rem 2rem;		
+		border: solid 1px #c2cad8;
+		background: rgba($white-color, .5);
+	}
+
+	&__label{
+		font-weight: 400;
+		margin-bottom: .5rem;
+		display: inline-block;
+	}
+
+	&__label--message{
+		margin-left: 1%;
+		margin-bottom: .5rem;
+		display: inline-block;
+	}
+
+	&__textarea{
+		width: 50%;
+		height: 20rem;
+		
+
+	}
+
+	&__btn{
+		float: right;
+		font-weight: 400;
+		margin-top: .5rem;
+		padding: 1rem 2rem;
+		color: $white-color;
+		background: $green-color;
+		border: solid 1px $green-color;
+	}
+
+}

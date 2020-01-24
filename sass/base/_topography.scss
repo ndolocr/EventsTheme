@@ -1,8 +1,8 @@
 body{
 	padding: 3rem;
-	font-size: 1.6rem;
 	font-weight: 400;
 	color: $color-light-grey;
+	font-size: $default-font-size;
 	background: rgba($color-white, 1);
 
 }
@@ -11,7 +11,6 @@ body{
 	color: $color-white;
 	margin-bottom: 6rem;
 	text-transform: uppercase;
-
 	backface-visibility: hidden;
 
 	&-main{
@@ -35,4 +34,17 @@ body{
 		animation-name: moveInRight;
 		animation-timing-function: ease-out;
 	}
+}
+
+.heading-secondary{
+	font-weight: 700;
+	font-size: 3.5rem;
+	color: transparent;
+	display: inline-block;
+	text-transform: uppercase;
+	background: linear-gradient(to right, rgba(248, 237, 200, 1), rgba(196, 151, 4, 1));
+
+	background-clip: text;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
 }

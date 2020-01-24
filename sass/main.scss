@@ -7,16 +7,14 @@
 @import "base/animations";
 @import "base/topography";
 
-@import "pages/home";
-
+@import "layouts/grid";
 @import "layouts/header";
+@import "layouts/footer";
 
-@import "components/_buttons";
+@import "components/card";
+@import "components/form";
+@import "components/buttons";
+@import "components/composition";
+@import "components/feature-box";
 
-
-
-
-
-
-
-
+@import "pages/home";
