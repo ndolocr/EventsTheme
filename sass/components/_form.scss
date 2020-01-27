@@ -54,3 +54,16 @@
 	}
 
 }
+
+form{
+	& .side-search{
+		background: #ff0;
+		margin: 2.2rem 1.8rem;
+
+		& .input-group{
+			background: #f00;
+			border-bottom: 1px solid #fff;
+		}
+	}
+}
+

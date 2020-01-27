@@ -2,3 +2,29 @@
 	padding-bottom: 10rem;
 	background: $dashboard-background-color;
 }
+
+.dashboard{
+	background: $white-color;
+}
+
+.main-dashboard{
+	width: 100%;
+
+	& .left-column{
+		width: 20%;
+		float: left;
+		padding: 1%;
+	}
+
+	& .right-column{
+		width: 76%;
+		padding: 1%;
+		float: left;
+		background: #999999;
+	}
+
+	&::after{
+		content: '';
+		clear: both;
+	}	
+}

@@ -1,0 +1,23 @@
+form{
+	margin: 2.2rem 1.8rem;
+
+	& .input-group{
+		border-bottom: 1px solid $grey-input-color;
+
+		& .search-form-control{
+			width: 80%;
+			border: none;
+			padding: 1rem;
+			color: $search-input-color;
+			background: $dashboard-background-color;
+		}
+
+		& .submit-form-control{
+			width: 8%;
+			border: none;
+			color: $search-input-color;
+			background: $dashboard-background-color;
+		}
+	}
+
+}

@@ -12,7 +12,7 @@ body {
   box-sizing: boder-box; }
 
 body {
-  padding: 3rem;
+  padding: 0rem;
   font-weight: 400;
   font-size: 1.6rem;
   background: white; }
@@ -20,6 +20,50 @@ body {
 .admin-body {
   padding-bottom: 10rem;
   background: #364150; }
+
+.dashboard {
+  background: #ffffff; }
+
+.main-dashboard {
+  width: 100%; }
+  .main-dashboard .left-column {
+    width: 20%;
+    float: left;
+    padding: 1%; }
+  .main-dashboard .right-column {
+    width: 76%;
+    padding: 1%;
+    float: left;
+    background: #999999; }
+  .main-dashboard::after {
+    content: '';
+    clear: both; }
+
+.row {
+  margin: 0 auto;
+  max-width: 114rem; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: '';
+    clear: both;
+    display: table; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem)/2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem)/3); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem)/4); }
+  .row .col-2-of-3 {
+    width: calc((((100% - 2 * 6rem)/3) * 2) + 6rem); }
+  .row .col-2-of-4 {
+    width: calc((((100% - 3 * 6rem)/4) * 2) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc((((100% - 3 * 6rem)/4) * 3) + 2 * 6rem); }
 
 header::after {
   content: '';
@@ -56,3 +100,19 @@ header::after {
     float: left;
     color: #ffffff;
     padding: 2.3rem 1rem 0 1rem; }
+
+form {
+  margin: 2.2rem 1.8rem; }
+  form .input-group {
+    border-bottom: 1px solid #435060; }
+    form .input-group .search-form-control {
+      width: 80%;
+      border: none;
+      padding: 1rem;
+      color: #4e5c6f;
+      background: #364150; }
+    form .input-group .submit-form-control {
+      width: 8%;
+      border: none;
+      color: #4e5c6f;
+      background: #364150; }
