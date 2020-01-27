@@ -4,7 +4,9 @@
   "description": "Landing page for Events Theme created for Les Magnifique Events Company Ltd",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss assets/css/styles.css"
+    "compile:sass": "node-sass sass/main.scss assets/css/styles.css",
+    "compile:admin": "node-sass sass/admin.scss admin/assets/css/styles.css"
+
   },
   "repository": {
     "type": "git",
