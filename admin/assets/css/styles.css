@@ -1,2 +1,58 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
 body {
+  box-sizing: boder-box; }
+
+body {
+  padding: 3rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  background: white; }
+
+.admin-body {
+  padding-bottom: 10rem;
   background: #364150; }
+
+header::after {
+  content: '';
+  clear: both; }
+
+.admin-header {
+  width: 94%;
+  height: 4.6rem;
+  padding: 1rem 3%;
+  background-size: cover;
+  background: #2b3643; }
+
+.logo {
+  width: 5%;
+  float: left;
+  height: 100%; }
+  .logo img {
+    height: 100%; }
+
+.profile {
+  float: right;
+  text-align: center; }
+  .profile__pic {
+    float: left;
+    width: 4.6rem;
+    height: 4.6rem;
+    overflow: hidden;
+    border-radius: 50%;
+    display: inline-block;
+    background: #ffffff; }
+    .profile__pic img {
+      width: 100%; }
+  .profile__name {
+    float: left;
+    color: #ffffff;
+    padding: 2.3rem 1rem 0 1rem; }
