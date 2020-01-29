@@ -6,6 +6,7 @@
 		margin-bottom: $gutter-horizontal;
 		
 		@include respond(tab-port){
+			padding: 2rem;
 			margin-bottom: $gutter-horizontal-small;
 		} 
 	}
