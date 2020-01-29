@@ -1,5 +1,4 @@
 body{
-	padding: 3rem;
 	font-weight: 400;
 	color: $color-light-grey;
 	font-size: $default-font-size;
@@ -18,6 +17,11 @@ body{
 		font-size: 5rem;
 		font-weight: 400;
 		letter-spacing: 3.5rem;
+
+		@include respond(phone){
+			font-size: 4rem;
+			letter-spacing: 1em;
+		}
 
 		animation-duration: 1s;
 		animation-name: moveInLeft;
