@@ -578,6 +578,9 @@ form .side-search {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.65); }
   .contact img {
     width: 100%; }
+    @media (max-width: 56.25em) {
+      .contact img {
+        visibility: hidden; } }
   .contact__cover {
     top: 0;
     left: 0;

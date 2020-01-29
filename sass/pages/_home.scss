@@ -55,6 +55,10 @@
 
 	& img{
 		width: 100%;
+
+		@include respond(tab-port){
+			visibility: hidden;
+		}
 	}
 
 	&__cover{
