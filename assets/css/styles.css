@@ -24,6 +24,9 @@ $breakpoint argument choices:
 
 html {
   font-size: 62.5%; }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
   @media (max-width: 75em) {
     html {
       font-size: 56.25%; } }
@@ -33,9 +36,6 @@ html {
   @media (max-width: 37.5em) {
     html {
       font-size: 40%; } }
-  @media (min-width: 112.5em) {
-    html {
-      font-size: 75%; } }
 
 body {
   padding: 3rem;
@@ -108,6 +108,10 @@ body {
     animation-duration: 1s;
     animation-name: moveInLeft;
     animation-timing-function: ease-out; }
+    @media (max-width: 37.5em) {
+      .heading-primary-main {
+        font-size: 3rem;
+        letter-spacing: 1em; } }
   .heading-primary-sub {
     display: block;
     font-size: 1.35rem;
@@ -116,6 +120,9 @@ body {
     animation-duration: 1s;
     animation-name: moveInRight;
     animation-timing-function: ease-out; }
+    @media (max-width: 37.5em) {
+      .heading-primary-sub {
+        letter-spacing: .5em; } }
 
 .heading-secondary {
   font-weight: 700;
@@ -133,6 +140,12 @@ body {
   max-width: 114rem; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
+    @media (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 6rem; } }
+  @media (max-width: 56.25em) {
+    .row {
+      max-width: 40rem; } }
   .row::after {
     content: '';
     clear: both;
@@ -141,6 +154,13 @@ body {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
+      @media (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 6rem; } }
+    @media (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem)/2); }
   .row .col-1-of-3 {
