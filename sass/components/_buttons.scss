@@ -35,6 +35,8 @@
 		&--hide{
 			top: 93%;
 			left: 50%;
+			display: none;
+			visibility: hidden;
 			position: absolute;
 			color: $color-light-grey;
 			background: $color-white;

@@ -442,6 +442,8 @@ form .side-search {
   .btn--white__narrow--hide {
     top: 93%;
     left: 50%;
+    display: none;
+    visibility: hidden;
     position: absolute;
     color: #777777;
     background: #ffffff;
