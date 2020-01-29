@@ -313,8 +313,15 @@ nav {
         background-image: linear-gradient(to right bottom, rgba(212, 175, 55, 0.2), #d4af37); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
+    @media (max-width: 56.25em) {
+      .card:hover .card__side--front {
+        transform: rotateY(0deg); } }
   .card:hover .card__side--back {
     transform: rotateY(0); }
+    @media (max-width: 56.25em) {
+      .card:hover .card__side--back {
+        display: none;
+        visibility: hidden; } }
   .card__picture {
     z-index: 2;
     height: 23rem;
@@ -442,13 +449,15 @@ form .side-search {
   .btn--white__narrow--hide {
     top: 93%;
     left: 50%;
-    display: none;
     visibility: hidden;
     position: absolute;
     color: #777777;
     background: #ffffff;
     transform: translate(-50%, -50%);
     padding: 1rem 2.2rem !important; }
+    @media (max-width: 56.25em) {
+      .btn--white__narrow--hide {
+        visibility: visible; } }
 
 .btn--gold {
   color: #ffffff;
