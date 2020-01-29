@@ -6,9 +6,8 @@
 	}
 }
 
-//MEDIA QUERIES MANAGER
-
 /*
+		MEDIA QUERIES MANAGER
 
 0 - 600px			--Phone View
 600px - 900px		--Tablet Portrait View
@@ -30,7 +29,7 @@ $breakpoint argument choices:
 		@media (max-width: 37.5em){ @content };			//600px
 	}
 
-	@if @breakpoint == tab-port{
+	@if $breakpoint == tab-port{
 		@media (max-width: 56.25em) { @content }; 		//900px
 	}
 
