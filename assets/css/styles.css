@@ -505,6 +505,9 @@ form .side-search {
   padding: 25rem 0;
   margin-top: -15vh;
   background: #f7f7f7; }
+  @media (max-width: 56.25em) {
+    .section-about {
+      padding: 10rem 0; } }
 
 .section-feature {
   padding: 20rem 0;
@@ -515,15 +518,24 @@ form .side-search {
   background-image: linear-gradient(to right bottom, rgba(248, 237, 200, 0.8), rgba(196, 151, 4, 0.8)), url(../img/hero/hero.jpg); }
   .section-feature > * {
     transform: skewY(7deg); }
+  @media (max-width: 56.25em) {
+    .section-feature {
+      padding: 10rem 0; } }
 
 .section-events {
   margin-top: -10rem;
   padding: 25rem 0 15rem 0;
   background: #f7f7f7; }
+  @media (max-width: 56.25em) {
+    .section-events {
+      padding: 20rem 0 10rem 0; } }
 
 .section-contact {
   padding: 15rem;
   background-image: linear-gradient(to right bottom, rgba(248, 237, 200, 0.8), #d4af37); }
+  @media (max-width: 56.25em) {
+    .section-contact {
+      padding: 10rem; } }
 
 .contact {
   z-index: 1;
