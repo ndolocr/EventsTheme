@@ -53,6 +53,14 @@
 	border-radius: $small-dimension;
 	box-shadow: 0 1.5rem 4rem rgba($black-color, 0.65);
 
+	@include respond(tab-land){
+		height: 80rem;
+	}
+
+	@include respond(phone){
+		height: 110rem;
+	}
+
 	& img{
 		width: 100%;
 
@@ -69,6 +77,14 @@
 		height: 50rem;
 		position: absolute;
 		background-image: linear-gradient(to right bottom, $color-light-gold, $color-light-gold);
+
+		@include respond(tab-land){
+			height: 80rem;
+		}
+
+		@include respond(phone){
+			height: 110rem;
+		}
 
 		& h2{
 			font-size: 2.6rem;
@@ -98,6 +114,14 @@
 		-moz-clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
 		-webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
 
+		@include respond(tab-land){
+			width: 90%;
+			height: 25rem;
+			clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+			-moz-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+			-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+		}
+
 	}
 
 	&__message{
@@ -108,6 +132,21 @@
 		clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
 		-moz-clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
 		-webkit-clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+
+		@include respond(tab-land){
+			left: 5%;
+			top: 30rem;
+			width: 90%;
+			height: 45rem;
+			clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+			-moz-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+			-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+		}
+
+		@include respond(phone){
+			height: 70rem;
+		}
+
 	}
 
 	

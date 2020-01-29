@@ -407,7 +407,7 @@ nav {
   height: 20rem; }
 
 .form__btn {
-  float: right;
+  float: left;
   font-weight: 400;
   margin-top: .5rem;
   padding: 1rem 2rem;
@@ -576,6 +576,12 @@ form .side-search {
   position: relative;
   border-radius: 0.3rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.65); }
+  @media (max-width: 75em) {
+    .contact {
+      height: 80rem; } }
+  @media (max-width: 37.5em) {
+    .contact {
+      height: 110rem; } }
   .contact img {
     width: 100%; }
     @media (max-width: 56.25em) {
@@ -589,6 +595,12 @@ form .side-search {
     height: 50rem;
     position: absolute;
     background-image: linear-gradient(to right bottom, rgba(248, 237, 200, 0.8), rgba(248, 237, 200, 0.8)); }
+    @media (max-width: 75em) {
+      .contact__cover {
+        height: 80rem; } }
+    @media (max-width: 37.5em) {
+      .contact__cover {
+        height: 110rem; } }
     .contact__cover h2 {
       font-size: 2.6rem;
       padding-top: 1rem;
@@ -609,6 +621,13 @@ form .side-search {
     clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
     -moz-clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
     -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%); }
+    @media (max-width: 75em) {
+      .contact__box {
+        width: 90%;
+        height: 25rem;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        -moz-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
   .contact__message {
     top: 5rem;
     left: 50%;
@@ -616,3 +635,15 @@ form .side-search {
     clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
     -moz-clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
     -webkit-clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%); }
+    @media (max-width: 75em) {
+      .contact__message {
+        left: 5%;
+        top: 30rem;
+        width: 90%;
+        height: 45rem;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        -moz-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
+    @media (max-width: 37.5em) {
+      .contact__message {
+        height: 70rem; } }
