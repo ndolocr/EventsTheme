@@ -466,6 +466,10 @@ form .side-search {
 
 .composition {
   position: relative; }
+  @media (max-width: 56.25em) {
+    .composition {
+      visiblity: hidden;
+      display: none; } }
   .composition__photo {
     width: 40%;
     position: absolute;

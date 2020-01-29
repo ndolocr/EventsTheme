@@ -1,6 +1,11 @@
 .composition{
 	position: relative;
 
+	@include respond(tab-port){
+		visiblity: hidden;
+		display: none;
+	}
+
 	&__photo{
 		width: 40%;
 		position: absolute;
