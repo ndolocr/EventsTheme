@@ -332,6 +332,13 @@ nav {
   background: #23959f;
   border: solid 1px #23959f; }
 
+form .side-search {
+  background: #ff0;
+  margin: 2.2rem 1.8rem; }
+  form .side-search .input-group {
+    background: #f00;
+    border-bottom: 1px solid #fff; }
+
 .btn:link, .btn:visited {
   border-radius: 10rem;
   padding: 1.5rem 4rem;
