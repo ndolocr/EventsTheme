@@ -436,9 +436,17 @@ form .side-search {
   background: #ffffff; }
 
 .btn--white__narrow {
-  padding: 1.2rem 2.2rem !important;
   color: #777777;
-  background: #ffffff; }
+  background: #ffffff;
+  padding: 1.2rem 2.2rem !important; }
+  .btn--white__narrow--hide {
+    top: 93%;
+    left: 50%;
+    position: absolute;
+    color: #777777;
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+    padding: 1rem 2.2rem !important; }
 
 .btn--gold {
   color: #ffffff;
