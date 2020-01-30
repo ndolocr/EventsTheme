@@ -197,10 +197,8 @@ nav {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
   .header__img {
     width: 100%;
-    height: 95vh; }
-    .header__img img {
-      background-size: cover;
-      background-position: top; }
+    height: 95vh;
+    background-size: cover; }
   .header__cover {
     top: 0;
     left: 0;
